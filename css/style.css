@@ -28,13 +28,13 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 150px; /* Ajusta según la altura requerida */
+    height: 150px;
     background: url('../img/LinkedIn Banner.png') no-repeat center center;
-    background-size: cover; /* Cubre todo el espacio del navbar */
+    background-size: cover;
     z-index: 1000;
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Mantiene los elementos alineados */
+    justify-content: flex-start;
     padding: 0 20px;
     box-sizing: border-box;
   }
@@ -45,7 +45,7 @@
     }
   }
  /*************************************************/
- /* Navbar-links alineados a la izquierda */
+ /* Navbar-links*/
 .navbar-links {
     list-style: none;
     margin: 0;
@@ -101,10 +101,10 @@
   }
 
   .hero img {
-    max-width: 30%; /* Ajusta el tamaño relativo al ancho del contenedor */
-    height: auto; /* Mantiene la proporción */
-    border-radius: 50px; /* Opcional, para esquinas redondeadas */
-    margin-top: 20px; /* Ajusta el espaciado superior si es necesario */
+    max-width: 30%;
+    height: auto;
+    border-radius: 50px;
+    margin-top: 20px;
   }
 /*********************************************************************************/
 /* Estilos para la sección "Sobre mí" */
@@ -201,17 +201,17 @@
 }
 
 .project-icon {
-  width: 120px; /* Tamaño del icono */
+  width: 120px;
   height: 120px;
   object-fit: cover;
-  border-radius: 50%; /* Icono redondeado */
+  border-radius: 50%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .project-icon:hover {
-  transform: scale(1.1); /* Efecto de zoom */
+  transform: scale(1.1);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -228,22 +228,22 @@
 }
 
 .project-links .btn {
-  display: inline-block; /* Asegura que se comporte como botón */
-  background-color: var(--primary-color); /* Color de fondo del botón */
-  color: var(--text-light); /* Color del texto */
-  padding: 10px 15px; /* Espaciado interno */
-  font-size: 1rem; /* Tamaño de la fuente */
-  text-decoration: none; /* Sin subrayado */
-  border-radius: 5px; /* Bordes redondeados */
-  font-weight: bold; /* Texto en negrita */
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 10px 15px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .project-links .btn:hover {
-  background-color: var(--secondary-color); /* Color de fondo al pasar el cursor */
-  transform: translateY(-2px); /* Efecto de levantamiento */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 /*************************************************/
 /* Sección Skills */
@@ -310,7 +310,7 @@
 }
 
 .skill-logo:hover {
-  transform: scale(1.1); /* Efecto de zoom */
+  transform: scale(1.1);
 }
 
 /* Tooltip */
@@ -368,10 +368,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px; /* Espaciado entre los elementos */
+  gap: 20px;
   margin-top: 20px;
 }
-
+ 
 /* Información de contacto en su cajita */
 .contact-info {
   flex: 1;
@@ -381,13 +381,13 @@
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center; /* Centrar el contenido de la caja */
+  text-align: center;
 }
 
 .contact-info h2 {
   font-size: 1.5rem;
   color: var(--primary-color);
-  text-align: left; /* Alinea "Puedes encontrarme aquí" a la izquierda */
+  text-align: left;
   margin-bottom: 15px;
 }
 
@@ -403,7 +403,7 @@
   margin: 10px 0;
   display: flex;
   align-items: center;
-  justify-content: center; /* Centra los elementos dentro de la caja */
+  justify-content: center;
   gap: 10px;
 }
 
