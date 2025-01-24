@@ -7,13 +7,19 @@
   <title>Portfolio | Leire Higueras</title>
   <!-- Fuentes desde Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Estilos CSS -->
+  <!-- Estilos CSS Y Favicon -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+
 </head>
+
 <body>
   <!-- Navbar con fondo del banner -->
   <nav class="navbar">
     <div class="navbar-content">
+      <!-- Botón para el menú hamburguesa -->
+      <button class="navbar-toggle" onclick="toggleMenu()">☰</button>
+      <!-- Enlaces del navbar -->
       <ul class="navbar-links">
         <li><a href="#sobremi">Sobre mí</a></li>
         <li><a href="#proyectos">Proyectos</a></li>
@@ -22,6 +28,7 @@
       </ul>
     </div>
   </nav>
+  
 
   <!-- Hero principal -->
   <header class="hero">
@@ -259,5 +266,14 @@
   <footer>
     <p>Creado por Leire Higueras © 2023</p>
   </footer>
+
+ <!-- Script para zona hamburguesa -->
+  <script>
+    function toggleMenu() {
+      const navbarLinks = document.querySelector('.navbar-links');
+      navbarLinks.classList.toggle('active');
+    }
+  </script>
+
 </body>
 </html>
