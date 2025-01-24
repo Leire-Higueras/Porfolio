@@ -490,8 +490,10 @@ footer {
   padding: 20px;
   background-color: var(--primary-color);
   color: var(--text-light);
-  margin-top: auto;
-  width: 100%; /* Asegura que ocupe todo el ancho */
+  margin-top: auto; /* Empuja el footer hacia el final */
+  width: 100%; /* Ocupa todo el ancho */
+  position: relative; /* Se ajusta dinámicamente según el contenido */
+  bottom: 0; /* Asegura que quede al fondo */
 }
 
 /*************************************************/
@@ -521,10 +523,8 @@ footer {
   }
 
   footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    position: relative; /* Permite que el footer sea dinámico */
+    bottom: auto; /* Resetea cualquier configuración fija */
   }
 }
 
@@ -542,10 +542,7 @@ footer {
   }
 
   footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
+    position: relative; /* Permite que se comporte según el contenido */
+    bottom: auto;
   }
 }
