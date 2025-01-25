@@ -16,19 +16,14 @@
 <body>
   <!-- Navbar con fondo del banner -->
   <nav class="navbar">
-    <div class="navbar-content">
-      <!-- Botón para el menú hamburguesa -->
-      <button class="navbar-toggle" onclick="toggleMenu()">☰</button>
-      <!-- Enlaces del navbar -->
-      <ul class="navbar-links">
-        <li><a href="#sobremi">Sobre mí</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </div>
+    <button class="navbar-toggle" onclick="toggleMenu()">☰</button>
+    <ul class="navbar-links">
+      <li><a href="#sobremi">Sobre mí</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
   </nav>
-  
 
   <!-- Hero principal -->
   <header class="hero">
@@ -267,13 +262,22 @@
     <p>Creado por Leire Higueras © 2023</p>
   </footer>
 
- <!-- Script para zona hamburguesa -->
-  <script>
-    function toggleMenu() {
+<!-- Script para zona hamburguesa -->
+<script>
+  function toggleMenu() {
+    const navbarLinks = document.querySelector('.navbar-links');
+    navbarLinks.classList.toggle('active'); // Alterna la clase "active"
+  }
+
+  // Cierra el menú automáticamente al hacer clic en un enlace
+  const links = document.querySelectorAll('.navbar-links a');
+  links.forEach(link => {
+    link.addEventListener('click', () => {
       const navbarLinks = document.querySelector('.navbar-links');
-      navbarLinks.classList.toggle('active');
-    }
-  </script>
+      navbarLinks.classList.remove('active'); // Quita la clase "active" al hacer clic
+    });
+  });
+</script>
 
 </body>
 </html>
